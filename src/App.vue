@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to 我的测试Vue"/>
+    <mt-header title="首页">
+      <mt-button icon="back" slot="left">返回</mt-button>
+      <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
+
+
+    <hlist></hlist>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import hlist from './components/hlist.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    hlist
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  padding:0;
+  margin:0;
 }
 </style>
